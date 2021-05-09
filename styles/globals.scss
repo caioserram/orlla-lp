@@ -1,0 +1,35 @@
+$sand-light: #eedbcc;
+$sand-dark: #eedbcc; //TODO
+$water-dark: #283d5a;
+$water-medium: #283d5a; //TODO
+$water-light: #283d5a; //TODO
+
+$custom-colors: (
+  "sand-light": $sand-light,
+  "sand-dark": $sand-dark,
+  "water-dark": $water-dark,
+  "water-medium": $water-medium,
+  "water-light": $water-light
+);
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  background-color: $sand-light;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
