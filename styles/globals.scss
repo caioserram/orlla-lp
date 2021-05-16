@@ -1,23 +1,30 @@
-$sand-light: #eedbcc;
-$sand-dark: #eedbcc; //TODO
-$water-dark: #283d5a;
-$water-medium: #283d5a; //TODO
-$water-light: #283d5a; //TODO
+$sand-light: #E6D7CB;
+$sand-dark: #C89D8B;
+$water-dark: #445579;
+$water-medium: #7180A6;
+$water-light: #8998B8;
+$default-text-color:#0000;
+$alternate-text-color:#FFFF;
+
 
 $custom-colors: (
   "sand-light": $sand-light,
   "sand-dark": $sand-dark,
   "water-dark": $water-dark,
   "water-medium": $water-medium,
-  "water-light": $water-light
+  "water-light": $water-light,
+  "default-text-color":$default-text-color,
+  "alternate-text-color":$alternate-text-color
 );
+
+$primary:#7180A6;
+$secondary:#F1E4FF;
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Inter;
 }
 
 a {
