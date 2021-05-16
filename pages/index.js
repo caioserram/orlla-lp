@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import FooterComponet from '../components/footer'
+import HeaderComponent from '../components/header'
 import styles from '../styles/Home.module.scss'
 
 export default function Home() {
@@ -11,16 +13,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className={styles.header}>
-        Header Orlla
-      </header>
+      <HeaderComponent/>
 
       <main className={styles.main}>
       </main>
 
-      <footer className={styles.footer}>
-        Footer Orlla
-      </footer>
+      <FooterComponet/>
     </div>
   )
 }
