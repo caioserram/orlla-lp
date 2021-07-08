@@ -2,7 +2,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import FooterComponet from '../components/footer'
 import HeaderComponent from '../components/header'
+import WavesComponent from '../components/waves'
 import styles from '../styles/Home.module.scss'
+import InitialActionComponent from '../components/initial_action'
+import AboutComponent from '../components/about'
 
 export default function Home() {
   return (
@@ -16,6 +19,8 @@ export default function Home() {
       <HeaderComponent/>
 
       <main className={styles.main}>
+        <AboutComponent></AboutComponent>
+        <WavesComponent></WavesComponent>
       </main>
 
       <FooterComponet/>

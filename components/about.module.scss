@@ -1,0 +1,37 @@
+.root {
+  position: absolute;
+  z-index: 5;
+  background: none;
+}
+
+.card_container {
+  // display: flex;
+  // flex-direction: row;
+  // align-items: center;
+  background: none;
+  margin:0 25% 0 25%;
+}
+
+.title {
+  background: none;
+  /* Heading / H2 */
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+  /* identical to box height, or 133% */
+
+  text-align: center;
+  font-feature-settings: "salt" on, "liga" off;
+
+  /* Default / White */
+
+  color: #ffffff;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0 0 2% 0;
+}

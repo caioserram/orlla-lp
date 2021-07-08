@@ -19,6 +19,7 @@
   padding-top: 1rem;
   margin-left: 6rem;
   z-index: 1;
+  background:none;
 }
 
 .header ul {
@@ -27,14 +28,17 @@
   flex-direction: row;
   align-items: center;
   padding: 0px;
+  background:none;
 }
 
 .header li {
   margin-left: 2rem;
+  background:none;
 }
 
 .header li a {
   color: #18191f !important;
+  background:none;
 }
 
 .header li a:hover,

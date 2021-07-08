@@ -1,0 +1,79 @@
+@keyframes dark_blue_wave {
+  100% {
+    left: 0%;
+  }
+}
+
+.dark_blue_wave {
+  z-index: 3;
+  background: none;
+  position: absolute;
+  animation-name: dark_blue_wave;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  left: -30.98%;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+//   animation-direction: reverse;
+}
+
+@keyframes medium_dark_blue_wave {
+    100% {
+      left: 0%;
+    }
+  }
+.medium_dark_blue_wave {
+    background: none;
+    position: absolute;
+    animation-name: medium_dark_blue_wave;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    left: -35.98%;
+    top:19%;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    z-index: 2;
+  //   animation-direction: reverse;
+  }
+
+@keyframes light_blue_wave {
+  100% {
+    left: 0%;
+  }
+}
+.light_blue_wave {
+    background: none;
+    position: absolute;
+    animation-name: light_blue_wave;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    left: -40.98%;
+    top:7%;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    z-index: 1;
+  //   animation-direction: reverse;
+  }
+
+@keyframes wet_sand {
+  100% {
+    left: -10%;
+  }
+}
+.wet_sand {
+  background: none;
+  position: absolute;
+  animation-name: wet_sand;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  left: -20%;
+  top:7%;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+  animation-delay: 2s;
+  z-index: 1;
+  }
