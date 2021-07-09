@@ -1,19 +1,19 @@
 import { NavLink } from "react-bootstrap";
 import styles from "./header.module.scss";
 
-export default function HeaderComponent() {
+export default function HeaderComponent(props) {
   return (
     <header className={styles.header}>
       <nav className={styles.first_nav} >
         <ul>
           <li>
-            <NavLink>Sobre</NavLink>
+            <NavLink onClick={() => props.set_current_page('1')}>Sobre</NavLink>
           </li>
           <li>
             <NavLink>Recompensas</NavLink>
           </li>
           <li>
-            <NavLink>Eventos</NavLink>
+            <NavLink onClick={() => props.set_current_page('2')}>Eventos</NavLink>
           </li>
           <li>
             <NavLink>Contato</NavLink>
