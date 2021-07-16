@@ -5,11 +5,13 @@
 }
 
 .card_container {
-  // display: flex;
-  // flex-direction: row;
-  // align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   background: none;
-  margin:0 25% 0 25%;
+  margin:0 1% 0 1%;
+
 }
 
 .title {
