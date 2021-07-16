@@ -9,10 +9,10 @@ import HomeComponent from "../components/home";
 
 function chooseCurrentPage(current_page){
   switch (current_page) {
-    case "1":
+    case "home":
       return (<HomeComponent />)
-    case "2":
-      return (<AboutComponent />)
+    case "about":
+      return (<AboutComponent/>);
     default:
       return (<HomeComponent />)
   }
@@ -20,7 +20,7 @@ function chooseCurrentPage(current_page){
 }
 
 export default function Home() {
-  const [current_page, set_current_page] = useState("1");
+  const [current_page, set_current_page] = useState("home");
 
   return (
     <div className={styles.container}>
