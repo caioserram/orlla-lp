@@ -1,6 +1,6 @@
-import styles from "./initial_action.module.scss";
+import styles from "./home.module.scss";
 
-export default function InitialActionComponent() {
+export default function HomeComponent() {
   return (
     <div className={styles.action_root}>
       <div className={styles.action_title}>

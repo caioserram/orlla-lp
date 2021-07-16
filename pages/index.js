@@ -5,16 +5,16 @@ import WavesComponent from "../components/waves";
 import styles from "../styles/Home.module.scss";
 import AboutComponent from "../components/about";
 import { useState } from "react";
-import InitialActionComponent from "../components/initial_action";
+import HomeComponent from "../components/home";
 
 function chooseCurrentPage(current_page){
   switch (current_page) {
     case "1":
-      return (<InitialActionComponent />)
+      return (<HomeComponent />)
     case "2":
       return (<AboutComponent />)
     default:
-      return (<InitialActionComponent />)
+      return (<HomeComponent />)
   }
 
 }
