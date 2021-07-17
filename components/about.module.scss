@@ -1,17 +1,8 @@
-.root {
-  position: absolute;
-  z-index: 5;
-  background: none;
-}
-
-.card_container {
+.cards_container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background: none;
-  margin:0 1% 0 1%;
-
 }
 
 .title {
@@ -36,4 +27,27 @@
   order: 0;
   flex-grow: 0;
   margin: 0 0 2% 0;
+}
+
+.prev-icon,
+.carousel-control-next-icon {
+  height: 100px !important;
+  width: 100px;
+  outline: black !important;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black !important;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after {
+  content: ">";
+  font-size: 55px;
+  color: red;
+}
+
+.prev-icon:after {
+  content: "<";
+  font-size: 55px;
+  color: red;
 }
