@@ -6,6 +6,7 @@ import styles from "../styles/Home.module.scss";
 import AboutComponent from "../components/about";
 import { useState } from "react";
 import HomeComponent from "../components/home";
+import RegisterComponent from "../components/register";
 
 function chooseCurrentPage(current_page){
   switch (current_page) {
@@ -13,6 +14,8 @@ function chooseCurrentPage(current_page){
       return (<HomeComponent />)
     case "about":
       return (<AboutComponent/>);
+    case "register":
+      return (<RegisterComponent/>);
     default:
       return (<HomeComponent />)
   }
