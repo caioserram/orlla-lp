@@ -6,48 +6,16 @@
 }
 
 .title {
+  
   background: none;
-  /* Heading / H2 */
   font-style: normal;
   font-weight: 800;
-  font-size: 48px;
-  line-height: 64px;
-  /* identical to box height, or 133% */
-
   text-align: center;
   font-feature-settings: "salt" on, "liga" off;
-
-  /* Default / White */
-
   color: #ffffff;
-
   /* Inside Auto Layout */
-
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 0 0 2% 0;
-}
-
-.prev-icon,
-.carousel-control-next-icon {
-  height: 100px !important;
-  width: 100px;
-  outline: black !important;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  border: 1px solid black !important;
-  background-image: none;
-}
-
-.carousel-control-next-icon:after {
-  content: ">";
-  font-size: 55px;
-  color: red;
-}
-
-.prev-icon:after {
-  content: "<";
-  font-size: 55px;
-  color: red;
+  margin: 1% 0 2% 0;
 }
