@@ -1,0 +1,77 @@
+.card_parent {
+  z-index: 5;
+  position: absolute;
+  background-color: white;
+  min-width: 32%;
+  border-radius: 3%;
+}
+
+.card_parent * {
+  background: none;
+}
+
+.form {
+  padding: 0.7rem;
+}
+
+.control {
+  margin-bottom: 0.5rem;
+}
+
+.control label {
+  //   display: block;
+  font-weight: 500;
+  color: #756f86;
+  margin-bottom: 0.5rem;
+  font-size: 80%;
+  line-height: 70%;
+}
+
+.control [type="text"],
+.control [type="email"],
+.control [type="password"],
+.control textarea {
+  display: block;
+  font: inherit;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  padding: 0.25rem;
+  width: 100%;
+}
+
+.control [type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.control [type="checkbox"]:checked {
+  background-color: #756f86;
+}
+
+
+.actions {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.actions button {
+  font: inherit;
+  cursor: pointer;
+  background-color: #c89d8b;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  border: none;
+  width: 100%;
+  font-size: 80%;
+}
+
+.actions button:hover,
+.actions button:active {
+  background-color: #756f86;
+}
+
+.card_parent section div h2 {
+  color: #7180a6;
+  font-weight: bold;
+  margin: 4% 4% 7% 4%;
+}
