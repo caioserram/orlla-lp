@@ -3,7 +3,7 @@ import styles from "./about_card.module.scss";
 export default function AboutCardComponent(props) {
   return (
     <div
-      className={`col-3 ${styles.card_container}`}
+      className={`${props.layout_class} ${styles.card_container}`}
     >
       <div className={`card ${styles.custom_card}`}>
         <div className={`card-body ${styles.card_body_div}`}>
