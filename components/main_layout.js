@@ -15,11 +15,11 @@ export default function MainLayoutComponent(props) {
       <div >
         <HeaderComponent />
 
-        <main className={`container ${styles.custom_container}`}>
+        <main className={`container ${styles.custom_container} `}>
           {props.children}
         </main>
 
-        <footer className={styles.footer}>
+        <footer className={`${styles.footer}`}>
           <div className={styles.footer_text}>
             {new Date().getFullYear()} - Orlla{" "}
           </div>
