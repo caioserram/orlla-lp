@@ -1,9 +1,7 @@
 .card_parent {
-  z-index: 5;
-  position: absolute;
   background-color: white;
-  min-width: 32%;
   border-radius: 3%;
+  flex-grow: 1;
 }
 
 .card_parent * {

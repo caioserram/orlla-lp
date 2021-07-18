@@ -1,29 +1,35 @@
-import { NavLink } from "react-bootstrap";
+import { Navbar, NavLink } from "react-bootstrap";
 import styles from "./header.module.scss";
 
 export default function HeaderComponent(props) {
   return (
-    <header className={styles.header}>
-      <nav className={styles.first_nav}>
-        <ul>
-          <li>
-            <NavLink href="/about">Sobre</NavLink>
-          </li>
-          <li>
-            <NavLink href="/rewards">Recompensas</NavLink>
-          </li>
-          <li>
-            <NavLink href="/events">Eventos</NavLink>
-          </li>
-          <li>
-            <NavLink href="/contact us">Contato</NavLink>
-          </li>
-        </ul>
-      </nav>
-      <div href="/about" className={styles.logo}>
+    <header className={`d-flex align-items-center ${styles.header}`}>
+      <div className="row d-flex flex-nowrap ">
+        <Navbar className={`${styles.first_nav}`}>
+          <ul className="list-unstyled list-inline">
+            <li className="list-inline-item">
+              <NavLink href="/about">Sobre</NavLink>
+            </li>
+            <li className="list-inline-item">
+              <NavLink href="/rewards">Recompensas</NavLink>
+            </li>
+            <li className="list-inline-item">
+              <NavLink href="/events">Eventos</NavLink>
+            </li>
+            <li className="list-inline-item">
+              <NavLink href="/contact us">Contato</NavLink>
+            </li>
+          </ul>
+        </Navbar>
+      </div>
+
+      <div
+        href="/about"
+        className={`d-flex justify-content-center align-items-center position-absolute w-100`}
+      >
         <img src="orlla-logo-original.svg"></img>
       </div>
-      <nav className={styles.second_nav}>
+      {/* <nav className={styles.second_nav}>
         <button className={"btn btn-secondary " + styles.sign_in_button}>
           Login
         </button>
@@ -33,7 +39,7 @@ export default function HeaderComponent(props) {
         >
           Cadastre-se
         </a>
-      </nav>
+      </nav> */}
     </header>
   );
 }
