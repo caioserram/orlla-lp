@@ -1,44 +1,49 @@
-import { Navbar, NavLink } from "react-bootstrap";
+import { Nav, Navbar, NavLink, Container } from "react-bootstrap";
 import styles from "./header.module.scss";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { Button } from "react-bootstrap";
+import { useState } from "react";
 
 export default function HeaderComponent(props) {
+  const [menuActive, setMenuActive] = useState(false);
+
+  function toggleMenu() {
+    console.log(menuActive);
+    setMenuActive(!menuActive);
+  }
   return (
     <header className={`d-flex align-items-center ${styles.header}`}>
-      <div className="d-none d-md-flex flex-nowrap">
-        <Navbar className={`pb-0`}>
-          <ul className="list-unstyled list-inline">
-            <li className="list-inline-item">
-              <NavLink href="/about">Sobre</NavLink>
-            </li>
-            <li className="list-inline-item">
-              <NavLink href="/rewards">Recompensas</NavLink>
-            </li>
-            <li className="list-inline-item">
-              <NavLink href="/events">Eventos</NavLink>
-            </li>
-            <li className="list-inline-item">
-              <NavLink href="/contact us">Contato</NavLink>
-            </li>
-          </ul>
-        </Navbar>
-      </div>
-      <div
-        href="/about"
-        className={`d-flex justify-content-center align-items-center position-absolute w-100`}
-      >
-        <img src="orlla-logo-original.svg"></img>
-      </div>
-      {/* <nav className={styles.second_nav}>
-        <button className={"btn btn-secondary " + styles.sign_in_button}>
-          Login
-        </button>
-        <a
-          href="/register"
-          className={"btn btn-primary " + styles.sign_up_button}
+      <Navbar bg="none" expand="lg" className="w-100 flex-start">
+        <Container className={styles.container}>
+          <Navbar.Toggle className="border-0" aria-controls="basic-navbar-nav">
+            <Button className="border-0 text-white">
+              <FaBars ></FaBars>
+            </Button>
+          </Navbar.Toggle>
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link className={styles.nav_link} href="/about">
+                Sobre
+              </Nav.Link>
+              <Nav.Link className={styles.nav_link} href="/rewards">
+                Recompensas
+              </Nav.Link>
+              <Nav.Link className={styles.nav_link} href="/events">
+                Eventos
+              </Nav.Link>
+              <Nav.Link className={styles.nav_link} href="/contact_us">
+                Contato
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+        <div
+          href="/about"
+          className={`d-flex justify-content-center align-items-center position-absolute w-100 mt-2`}
         >
-          Cadastre-se
-        </a>
-      </nav> */}
+          <img src="orlla-logo-original.svg"></img>
+        </div>
+      </Navbar>
     </header>
   );
 }
