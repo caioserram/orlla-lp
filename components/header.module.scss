@@ -3,37 +3,20 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
-  height: 10vh;
 }
 
 .header * {
   background: none;
 }
 
-.header li {
-  margin-left: 2rem;
-}
-
-.header li a {
+.header a {
   color: #18191f !important;
 }
 
-.header li a:hover,
-.header li a:active,
-.header li a:active {
+.header a:hover,
+.header a:active,
+.header a:active {
   color: white !important;
-}
-
-
-
-
-.second_nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 10px 20px;
-  z-index: 1;
-  width: 30% !important;
 }
 
 .sign_in_button {
@@ -50,4 +33,12 @@
   flex-grow: 0;
   margin: 0px 14px;
   color: #ffffff;
+}
+
+.nav_link{
+  margin: 0 2% 0 5%;
+}
+
+.container{
+  z-index:5
 }
