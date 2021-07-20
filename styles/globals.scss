@@ -1,11 +1,10 @@
-$sand-light: #E6D7CB;
-$sand-dark: #C89D8B;
+$sand-light: #e6d7cb;
+$sand-dark: #c89d8b;
 $water-dark: #445579;
-$water-medium: #7180A6;
-$water-light: #8998B8;
-$default-text-color:#0000;
-$alternate-text-color:#FFFF;
-
+$water-medium: #7180a6;
+$water-light: #8998b8;
+$default-text-color: #0000;
+$alternate-text-color: #ffff;
 
 $custom-colors: (
   "sand-light": $sand-light,
@@ -13,13 +12,14 @@ $custom-colors: (
   "water-dark": $water-dark,
   "water-medium": $water-medium,
   "water-light": $water-light,
-  "default-text-color":$default-text-color,
-  "alternate-text-color":$alternate-text-color
+  "default-text-color": $default-text-color,
+  "alternate-text-color": $alternate-text-color,
 );
 
-$primary:#7180A6;
-$secondary:#F1E4FF;
-$info:$sand-dark;
+$primary: #7180a6;
+$secondary: #f1e4ff;
+$info: $sand-light;
+$small-font-size: 0.8em;
 
 html,
 body {
@@ -27,6 +27,11 @@ body {
   margin: 0;
   font-family: Inter;
   font-style: normal;
+  background-color: $sand-light;
+}
+
+body * {
+  background-color: $sand-light;
 }
 
 a {
@@ -36,32 +41,22 @@ a {
 
 * {
   box-sizing: border-box;
-  background-color: $sand-light;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/scss/utilities.scss";
 
 @import "../node_modules/font-awesome/scss/font-awesome.scss";
 
-$theme-colors: map-merge($theme-colors, $custom-colors);
-
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
-}
-
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-}
+$utilities: (
+  "color": (
+    property: color,
+    class: background,
+    print:true,
+    values:
+      map-merge(
+        $theme-colors,
+        $custom-colors
+      ),
+  ),
+);
