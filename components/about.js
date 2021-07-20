@@ -33,11 +33,11 @@ export default function AboutComponent() {
     ></AboutCardComponent>,
   ];
 
-  const carouselItems = aboutComponents.map((item) => (
-    <Carousel.Item> {item} </Carousel.Item>
+  const carouselItems = aboutComponents.map((item,i) => (
+    <Carousel.Item key={i}> {item} </Carousel.Item>
   ));
 
-  const cardItems = aboutComponents.map((item) => <div> {item} </div>);
+  const cardItems = aboutComponents.map((item,i) => <div key={i}> {item} </div>);
 
   return (
     <div>
