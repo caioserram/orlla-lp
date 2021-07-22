@@ -9,7 +9,7 @@ export default function EventBottomCardComponent(props) {
         <Card.Img
           className="bg-white w-100 h-75"
           variant="top"
-          src="line_indicator.svg"
+          src="line_indicator_icon.svg"
         />
       </div>
     );
@@ -22,7 +22,7 @@ export default function EventBottomCardComponent(props) {
           <Card.Img
             className="bg-white w-75 h-75"
             variant="top"
-            src="circle.svg"
+            src="circle_icon.svg"
           />
         </div>
         {end_element}
