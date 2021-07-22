@@ -19,7 +19,7 @@ export default function MainLayoutComponent(props) {
           {props.children}
         </main>
 
-        <footer className={`mt-5 mb-3 w-100 text-white d-flex justify-content-center`}>
+        <footer className={`d-none fixed-bottom mt-5 mb-3 w-100 text-white d-lg-flex justify-content-center`}>
           <div className={styles.footer_text}>
             {new Date().getFullYear()} - Orlla{" "}
           </div>

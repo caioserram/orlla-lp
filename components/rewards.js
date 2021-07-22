@@ -14,8 +14,8 @@ export default function RewardsComponent() {
           </p>
         </Col>
       </Row>
-      <div className="mt-5 mb-5">
-        <Row sm={4} xs={3} className="m-2 d-flex justify-content-center">
+      <div className="mt-5">
+        <Row sm={4} xs={3}className="m-2 d-flex justify-content-center">
           <RewardIconComponent img_ref="logo_r1_1.svg" />
           <RewardIconComponent img_ref="logo_r1_2.svg" />
           <RewardIconComponent img_ref="logo_r1_3.svg" />
@@ -44,7 +44,7 @@ export default function RewardsComponent() {
         </Row>
       </div>
       <Row>
-        <Col className="d-flex align-items-center justify-content-center">
+        <Col className="my-4 d-flex align-items-center justify-content-center">
           <Button className="btn-dark text-white w-md-25">
             <small className="bg-transparent">Trocar Pontos</small>
           </Button>
