@@ -37,7 +37,7 @@ export default function EventsComponent() {
       </Row>
       <Row xs={1}>
         <Col className="bg-white">
-          <h1 className="bg-white display-4 p-3 text-primary fw-bold">
+          <h1 className="bg-white display-5 p-3 text-primary fw-bold">
             Como Participar?
           </h1>
         </Col>
